@@ -67,7 +67,7 @@ class RubyMaze
     end
 
     def help
-      render
+      render(@maze)
       render_usage
     end
 
