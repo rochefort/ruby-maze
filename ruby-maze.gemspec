@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "ruby/maze/version"
+require "ruby_maze/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ruby-maze"
-  spec.version       = Ruby::Maze::VERSION
+  spec.version       = RubyMaze::VERSION
   spec.authors       = ["rochefort"]
   spec.email         = ["terasawan@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Maze Game on CLI"
+  spec.description   = spec.summary
+  spec.homepage      = "https://github.com/rochefort/ruby-maze"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
