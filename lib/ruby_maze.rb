@@ -1,5 +1,14 @@
-require "ruby_maze/cli"
+require "ruby_maze/executor"
+require "ruby_maze/keyboard"
+require "ruby_maze/maze"
 require "ruby_maze/version"
-module RubyMaze
-  
+
+class RubyMaze
+  def run(size)
+    executor = Executor.new(size)
+    while true
+      key = Keyboard.read_key
+      executor.exec(key)
+    end
+  end
 end
