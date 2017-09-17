@@ -4,9 +4,9 @@ class RubyMaze
       extend self
 
       private
-        def render
+        def render(maze)
           puts "\e[H\e[2J"
-          @maze.each do |line|
+          maze.each do |line|
             # nil:    壁 => `[]`
             # true:   道 => `  `
             # その他: goal or user => `GO` or `**`

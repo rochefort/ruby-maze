@@ -37,7 +37,7 @@ class RubyMaze
       @paths = []
       @size = size
       create_maze
-      render
+      render(@maze)
       render_usage
     end
 
@@ -52,14 +52,14 @@ class RubyMaze
         exit()
       else
         move_user(next_pos)
-        render
+        render(@maze)
       end
     end
 
     def reset
       change_maze(@user_pos, "  ")
       setup_start
-      render
+      render(@maze)
     end
 
     def renew
