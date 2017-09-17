@@ -19,7 +19,7 @@ class RubyMaze
       case key
       when "q", "\u0003"
         # q or control-c
-        fail()
+        exit()
       when "R"
         @maze.reset()
       when "N"
