@@ -38,7 +38,6 @@ Press the R key to RESTART game.
 Press the N key to start NEW game.
 Press the H key to look at this.
 
-GAME START!!
 EOS
         end
 

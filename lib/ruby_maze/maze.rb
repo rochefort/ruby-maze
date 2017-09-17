@@ -39,6 +39,7 @@ class RubyMaze
       create_maze
       render(@maze)
       render_usage
+      puts "GAME START!!"
     end
 
     def execute(key)
