@@ -45,7 +45,7 @@ class RubyMaze
       return unless MOVE_KEYS.values.flatten.include?(key)
       direction = MOVE_KEYS.find { |_d, keys| keys.include?(key) }.to_a[0]
       next_pos = next_position(direction, @user_pos)
-      return if path?(next_pos)
+      return if wall?(next_pos)
 
       if @goal_pos == next_pos
         render_finish
@@ -72,8 +72,12 @@ class RubyMaze
     end
 
     private
-      def path?(position)
-        !@maze[position[0]][position[1]]
+      # 壁かどうか?
+      #   壁: nil
+      #   道: true
+      #   その他: goal or user
+      def wall?(position)
+        @maze[position[0]][position[1]] == nil
       end
 
       def create_maze
