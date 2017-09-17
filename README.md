@@ -1,35 +1,59 @@
 # Ruby::Maze
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby/maze`. To experiment with that code, run `bin/console` for an interactive prompt.
+[hey-cube/maze](https://github.com/hey-cube/maze) のruby実装です。  
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'ruby-maze'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruby-maze
+    $ git clone https://github.com/rochefort/ruby-maze
+    $ cd ruby-maze
+    $ bundle install
+    $ bundle exec rake install
+    # if you use rbenv:
+    $ rbenv rehash
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ ruby-maze 20
 
-## Development
+```
+[][][][][][][][][][][][][][][][]GO[][][]
+[]    []      []    []            [][][]
+[]  [][]  []      []    [][]  []    [][]
+[]          [][]      []      [][]    []
+[]  [][][]      [][][][]  []    [][]  []
+[]        [][]  []      []    []      []
+[][][][]    [][]    []    [][]    []  []
+[]    [][]    []  [][][]  []  []  []  []
+[]  []    []  []    []    []      []  []
+[]      []      []    []  [][]  [][]  []
+[]  []      []  []  []  []        []  []
+[]    [][][]  [][]        []  []  [][][]
+[][]      []      [][][]    []        []
+[]  [][]  []  []        []  []  [][]  []
+[]  [][]  []    []  []  []    [][][]  []
+[]        []  []    []    []    []    []
+[]  [][][]  []    []  []    []      [][]
+[]      []      [][]  [][]    [][]    []
+[]  []      []            []      []  []
+[]**[][][][][][][][][][][][][][][][][][]
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+----------------------------------------------
+Usage:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+** in the lower left is YOU.
+GO in the upper right is GOAL.
 
-## Contributing
+Press the w or Up-arrow    key to move UP.
+Press the s or Down-arrow  key to move DOWN.
+Press the a or Left-arrow  key to move LEFT.
+Press the d or Right-arrow key to move RIGHT.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby-maze.
+Press the q or Control-c key to quit game.
+
+Press the R key to RESTART game.
+Press the N key to start NEW game.
+Press the H key to look at this.
+
+GAME START!!
+```
