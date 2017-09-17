@@ -4,7 +4,7 @@ require "ruby_maze/version"
 
 class RubyMaze
   def initialize(size)
-    @maze = RubyMaze::Maze.new(size)
+    @maze = Maze.new(size)
   end
 
   def run
