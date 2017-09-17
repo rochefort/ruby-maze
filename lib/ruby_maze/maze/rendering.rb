@@ -27,10 +27,10 @@ Usage:
 ** in the lower left is YOU.
 GO in the upper right is GOAL.
 
-Press the w or Up-arrow    key to move UP.
-Press the s or Down-arrow  key to move DOWN.
-Press the a or Left-arrow  key to move LEFT.
-Press the d or Right-arrow key to move RIGHT.
+Press the w, k or Up-arrow    key to move UP.
+Press the s, j or Down-arrow  key to move DOWN.
+Press the a, l or Left-arrow  key to move LEFT.
+Press the d, h or Right-arrow key to move RIGHT.
 
 Press the q or Control-c key to quit game.
 

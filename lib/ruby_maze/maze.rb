@@ -22,10 +22,10 @@ class RubyMaze
     DIRECTIONS = [DIRECTION_UP, DIRECTION_DOWN, DIRECTION_RIGHT, DIRECTION_LEFT]
 
     MOVE_KEYS = {
-      DIRECTION_UP    => ["w", "\e[A"],
-      DIRECTION_DOWN  => ["s", "\e[B"],
-      DIRECTION_RIGHT => ["a", "\e[C"],
-      DIRECTION_LEFT  => ["d", "\e[D"],
+      DIRECTION_UP    => ["w", "k", "\e[A"],
+      DIRECTION_DOWN  => ["s", "j", "\e[B"],
+      DIRECTION_RIGHT => ["a", "l", "\e[C"],
+      DIRECTION_LEFT  => ["d", "h", "\e[D"],
     }
 
     def initialize(size)
