@@ -90,10 +90,10 @@ class RubyMaze
         col = rand(@size - 2) + 1
         extend_path(row, col)
 
-        # 初回探索
-        extend_paths
-        # 再探索
-        extend_paths while extendable_paths?
+        # 探索
+        begin
+          extend_paths
+        end while extendable_paths?
 
         setup_start
         setup_goal
